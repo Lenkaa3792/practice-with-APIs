@@ -1,7 +1,7 @@
 document.getElementById( 'button' )
 document.getElementById("inputValue");
 document.getElementById( 'names' )
-document.getElementById( "desc" );
+// document.getElementById( "desc" );
 document.getElementById("cloud");
 document.getElementById("wind");
 
