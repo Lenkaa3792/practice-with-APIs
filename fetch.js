@@ -13,25 +13,19 @@ document.getElementById( 'button' ).addEventListener( 'click', function ()
     .then( response => response.json() )
         .then( data => 
         {
-            valueName = data['main'][ 'name' ]
+            valueName = data['name']
             valueClouds = data["clouds"]['all'];
             valueTemp = data[ 'main' ][ 'temp' ]
              valueWind = data["wind"]['speed'];
-
-
-
-            
-            name.innerHTML = valueName;
+//dropping them to WEB PAGE
+            names.innerHTML = valueName;
             cloud.innerHTML = valueClouds;
             temp.innerHTML = valueTemp;
            wind.innerHTML = valueWind;
          
-
-             console.log(data)
         } )
        
     
-    //.catch(err=> alert('wrong city'))
 
     
 })
